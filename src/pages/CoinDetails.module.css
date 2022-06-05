@@ -1,0 +1,107 @@
+.coin-details-container{
+  background-color: var(--dark-bg);
+  min-height: 80vh;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.coin-info{
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+  flex: 1;
+  width: 100%;
+  max-width: 100%;
+  background-color: var(--dark-bg);
+  color: var(--second-clr);
+}
+
+.coin-info>*:not(p){
+  color: var(--main-clr);
+}
+
+.coin-info p{
+  font-size: 1.5rem;
+}
+
+.coin-info img{
+  float: left;
+  margin: 10px;
+  margin-top: 0;
+}
+
+.coin-chart{
+  /* background-color: rgba(255, 0, 0, 0.2); */
+  min-width: 'max-content';
+  box-sizing: border-box;
+  margin-right: 20px;
+  flex: 2;
+  min-height: 100%;
+  max-width: 100%;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  overflow-x: auto;
+}
+
+.coin-chart canvas{
+  min-height: 100%;
+  max-width: 100%;
+}
+
+.days-btns{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 20px 0;
+  flex: 0;
+  max-width: 100%;
+}
+
+.days-btns button{
+  /* background-color: var(--darker-bg); */
+  background-color: #1b1b1b;
+  color: var(--main-clr);
+  outline: none;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.typewriter-cursor{
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.more-info{
+  font-size: 1.3rem;
+}
+
+@media (max-width: 1000px){
+  .coin-info img{
+    float: none;
+  }
+  .coin-details-container{
+    display: block;
+  }
+  .coin-chart{
+    min-height: 500px;
+  }
+}
+
+@media (max-width: 500px){
+  .coin-info p{
+    font-size: 1.2rem;
+  }
+  .days-btns{
+    padding: 0 10px;
+  }
+  .days-btns button{
+    padding: 10px;
+    font-size: 1rem;
+  }
+}

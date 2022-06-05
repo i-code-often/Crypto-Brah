@@ -1,0 +1,14 @@
+.tr{
+  padding: 100px 0;
+  background-color: yellow;
+}
+
+.dt{
+  width: max-content;
+  margin: 0 auto;
+}
+
+td a{
+  color: black;
+  text-decoration: underline;
+}

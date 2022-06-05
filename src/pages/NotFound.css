@@ -1,0 +1,56 @@
+.not-found-container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+
+.not-found-container div{
+  height: 100%;
+  width: 100%;
+}
+
+.not-found-container h1{
+  text-align: center;
+  max-width: 100%;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.not-found-container a{
+  color: #1B2E35;
+}
+
+.not-found-container img{
+  display: block;
+  width: 400px;
+  margin: 0 auto;
+  margin-bottom: 0;
+}
+
+.not-found-container figcaption{
+  text-align: center;
+  max-width: 100%;
+  transform: translateY(-10px);
+  width: max-content;
+  margin: 0 auto;
+}
+
+@media(max-width: 400px){
+  .not-found-container img{
+    width: 200px;
+  }
+}
+
+@media(max-width: 250px){
+  .not-found-container img{
+    width: 100px;
+  }
+  .not-found-container h1{
+    font-size: 1.3rem;
+  }
+}

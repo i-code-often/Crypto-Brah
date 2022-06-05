@@ -1,0 +1,44 @@
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  background: var(--darker-bg);
+  color: var(--main-clr);
+}
+
+.logo a {
+  color: var(--main-clr);
+  text-decoration: none;
+}
+
+.header{
+  border-bottom: 2.5px solid var(--main-clr);
+  width: 100%;
+  background-color: var(--darker-bg);
+}
+
+.selectContainer{
+  box-sizing: border-box;
+  margin: 10px;
+  width: 80px;
+}
+
+@media screen and (max-width: 270px){
+  .selectContainer{
+    width: 50px;
+  }
+}
+
+@media screen and (max-width: 200px){
+  .selectContainer{
+    width: 40px;
+  }
+}
+
+@media screen and (max-width: 800px){
+  .logo{
+    font-size: 1.75em;
+  }
+}
