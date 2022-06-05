@@ -6,6 +6,8 @@ header{
   margin: 0 auto;
   background: var(--darker-bg);
   color: var(--main-clr);
+  padding: 0 10px;
+  box-sizing: border-box;
 }
 
 .logo a {
@@ -31,14 +33,18 @@ header{
   }
 }
 
-@media screen and (max-width: 200px){
-  .selectContainer{
-    width: 40px;
-  }
-}
 
 @media screen and (max-width: 800px){
   .logo{
     font-size: 1.75em;
+  }
+}
+
+@media screen and (max-width: 200px){
+  .selectContainer{
+    width: 40px;
+  }
+  .logo{
+    font-size: 1.5em;
   }
 }
